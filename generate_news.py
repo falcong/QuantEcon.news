@@ -43,6 +43,12 @@ CONFIG_ORG = {
 
 BUILD = [CONFIG_LECTURES, CONFIG_ORG]
 
+#-Check if Directories are present-#
+for project in BUILD:
+	if not os.path.isdir(project["build_dir"]):
+		print("Setting up directory: %s" % project["build_dir"])
+		os.makedirs(project["build_dir"])
+
 #--------------------#
 #-Document Templates-#
 #--------------------#
