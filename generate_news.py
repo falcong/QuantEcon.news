@@ -28,6 +28,7 @@ org-site/
 
 import yaml
 import os
+import copy
 
 #-BUILD-#
 
@@ -56,9 +57,9 @@ for project in BUILD:
 #--------------------#
 
 #-RST-#
-rst_filename  = "news.rst"
-rst_doc       = [
-                ".. _%s:" % rst_filename.split(".")[0]    , 
+RST_FILENAME  = "news.rst"
+RST_DOC       = [
+                ".. _%s:" % RST_FILENAME.split(".")[0]    , 
                 ""                          , 
                 "*************************" , 
                 "News & Announcements"      , 
@@ -66,14 +67,14 @@ rst_doc       = [
                 ""
                 ]
 #-HTML-#
-html_items = 4
-html_filename = "news_snippet.html"
-html_doc =  [
+HTML_ITEMS = 4
+HTML_FILENAME = "news_snippet.html"
+HTML_DOC =  [
             r'<div class="news clearfix">'  , 
             r'<h2>News</h2>'                ,
             r'<ul>'                         ,
             ]   
-html_end =  [r'</ul>',r'<p class="more"><a href="/common/news.html">Read more QuantEcon news</a></p>',r'</div>']
+HTML_END =  [r'</ul>',r'<p class="more"><a href="/common/news.html">Read more QuantEcon news</a></p>',r'</div>']
 
 #------------#
 #-Month Data-#
@@ -124,10 +125,10 @@ for project in BUILD:
     fl = open('news.yaml', 'r') #-YAML at Base Level of Repo-#
     doc = yaml.load(fl)
     #-Filter for Project Tags-#
-    doc = {k: v for k,v in doc.items() if project['tag'] in v['website']}
+    doc = {k: v for k,v in doc.items() if project['tag'] in v['website'].strip("\n")}
 
     #-Build RST Document-#
-
+    rst_doc = copy.copy(RST_DOC)
     dates = _to_numeric_dates(list(doc.keys()))
     for year, month, day in sorted(dates, reverse=True):
         date = "%s-%s-%s" % (day, num_to_month[month], year)
@@ -136,20 +137,20 @@ for project in BUILD:
         rst_doc.append("")
         rst_doc.append(doc[date]['description'].replace("\n", "\n\n"))
     #-Write RST Document-#
-    print("Writing RST File: %s" % rst_filename)
-    write_file(os.path.join(project['build_dir'], rst_filename), rst_doc)
+    print("Writing RST File: %s" % RST_FILENAME)
+    write_file(os.path.join(project['build_dir'], RST_FILENAME), rst_doc)
 
     #-Build HTML Snippet-#
-
-    for year, month, day in sorted(dates, reverse=True)[:html_items]:
+    html_doc = copy.copy(HTML_DOC)
+    for year, month, day in sorted(dates, reverse=True)[:HTML_ITEMS]:
         date = "%s-%s-%s" % (day, num_to_month[month], year)                #Long Date Style: '03-October-2014'
         short_date = "%s %s %s" % (day, num_to_month[month][:3], year)      #Short Date Style: '03 Oct 2014'
         html_id = "%s-%s" % (num_to_month[month].lower(), year)
         html_doc.append(r'<li><span class="date">'+short_date+r'</span> <a href="%s/news.html#%s">'%(project['web-folder'], html_id)+doc[date]['title'].rstrip("\n")+r'</a>')
         html_doc.append(r'<span class="summ">'+doc[date]['summary'].rstrip("\n")+r'</span></li>')
-    html_doc += html_end
+    html_doc += HTML_END
     #-Write HTML Snippet-#
-    print("Writing HTML File: %s" % html_filename)
-    write_file(os.path.join(project['build_dir'], html_filename), html_doc)
+    print("Writing HTML File: %s" % HTML_FILENAME)
+    write_file(os.path.join(project['build_dir'], HTML_FILENAME), html_doc)
 
 
