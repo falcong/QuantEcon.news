@@ -41,7 +41,7 @@ CONFIG_LECTURES = {
 CONFIG_ORG = {
     'build_dir' : "./org_site/",
     'tag' : "org-site",
-    'web-folder' : "common"
+    'web-folder' : "news"
 }
 
 BUILD = [CONFIG_LECTURES, CONFIG_ORG]
