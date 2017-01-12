@@ -33,12 +33,14 @@ import os
 
 CONFIG_LECTURES = {
     'build_dir' : "./lecture_site/",
-    'tag' : "lecture-site"
+    'tag' : "lecture-site",
+    'web-folder' : "common"
 }
 
 CONFIG_ORG = {
     'build_dir' : "./org_site/",
-    'tag' : "org-site"
+    'tag' : "org-site",
+    'web-folder' : "common"
 }
 
 BUILD = [CONFIG_LECTURES, CONFIG_ORG]
@@ -143,7 +145,7 @@ for project in BUILD:
         date = "%s-%s-%s" % (day, num_to_month[month], year)                #Long Date Style: '03-October-2014'
         short_date = "%s %s %s" % (day, num_to_month[month][:3], year)      #Short Date Style: '03 Oct 2014'
         html_id = "%s-%s" % (num_to_month[month].lower(), year)
-        html_doc.append(r'<li><span class="date">'+short_date+r'</span> <a href="%s/news.html#%s">'%(project['build_dir'], html_id)+doc[date]['title'].rstrip("\n")+r'</a>')
+        html_doc.append(r'<li><span class="date">'+short_date+r'</span> <a href="%s/news.html#%s">'%(project['web-folder'], html_id)+doc[date]['title'].rstrip("\n")+r'</a>')
         html_doc.append(r'<span class="summ">'+doc[date]['summary'].rstrip("\n")+r'</span></li>')
     html_doc += html_end
     #-Write HTML Snippet-#
