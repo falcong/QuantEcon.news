@@ -35,13 +35,15 @@ import copy
 CONFIG_LECTURES = {
     'build_dir' : "./lecture_site/",
     'tag' : "lecture-site",
-    'web-folder' : "common"
+    'web-folder' : "common",
+    'html-items' : 4
 }
 
 CONFIG_ORG = {
     'build_dir' : "./org_site/",
     'tag' : "org-site",
-    'web-folder' : "news"
+    'web-folder' : "news",
+    'html-items' : 3
 }
 
 BUILD = [CONFIG_LECTURES, CONFIG_ORG]
@@ -67,7 +69,6 @@ RST_DOC       = [
                 ""
                 ]
 #-HTML-#
-HTML_ITEMS = 4
 HTML_FILENAME = "news_snippet.html"
 HTML_DOC =  [
             r'<div class="news clearfix">'  , 
@@ -120,6 +121,8 @@ def _to_numeric_dates(datelist):
 
 for project in BUILD:
     print("[generate_news.py] Building news for %s" % project['tag'])
+
+    HTML_ITEMS = project['html-items']
 
     #-Open YAML File-#
     fl = open('news.yaml', 'r') #-YAML at Base Level of Repo-#
