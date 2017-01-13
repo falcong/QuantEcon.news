@@ -36,14 +36,18 @@ CONFIG_LECTURES = {
     'build_dir' : "./lecture_site/",
     'tag' : "lecture-site",
     'web-folder' : "common",
-    'html-items' : 4
+    #-HTML OPTIONS-#
+    'html-items' : 4,
+    'html-end' : [r'</ul>',r'<p class="more"><a href="/common/news.html">Read more QuantEcon news</a></p>',r'</div>']
 }
 
 CONFIG_ORG = {
     'build_dir' : "./org_site/",
     'tag' : "org-site",
     'web-folder' : "news",
-    'html-items' : 3
+    #-HTML OPTIONS-#
+    'html-items' : 3,
+    'html-end' 	 : [r'</ul>',r'<p class="more"><a href="news/news.html">Read more QuantEcon news</a></p>',r'</div>']
 }
 
 BUILD = [CONFIG_LECTURES, CONFIG_ORG]
@@ -75,7 +79,7 @@ HTML_DOC =  [
             r'<h2>News</h2>'                ,
             r'<ul>'                         ,
             ]   
-HTML_END =  [r'</ul>',r'<p class="more"><a href="/common/news.html">Read more QuantEcon news</a></p>',r'</div>']
+# HTML_END =  [r'</ul>',r'<p class="more"><a href="/common/news.html">Read more QuantEcon news</a></p>',r'</div>']
 
 #------------#
 #-Month Data-#
@@ -151,7 +155,7 @@ for project in BUILD:
         html_id = "%s-%s" % (num_to_month[month].lower(), year)
         html_doc.append(r'<li><span class="date">'+short_date+r'</span> <a href="%s/news.html#%s">'%(project['web-folder'], html_id)+doc[date]['title'].rstrip("\n")+r'</a>')
         html_doc.append(r'<span class="summ">'+doc[date]['summary'].rstrip("\n")+r'</span></li>')
-    html_doc += HTML_END
+    html_doc += project['html-end'] #HTML_END
     #-Write HTML Snippet-#
     print("Writing HTML File: %s" % HTML_FILENAME)
     write_file(os.path.join(project['build_dir'], HTML_FILENAME), html_doc)
