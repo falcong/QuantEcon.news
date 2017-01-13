@@ -66,7 +66,9 @@ for project in BUILD:
 RST_FILENAME  = "news.rst"
 RST_DOC       = [
                 ".. _%s:" % RST_FILENAME.split(".")[0]    , 
-                ""                          , 
+                ""                          ,
+                ".. include:: ../org_banner.raw", 
+                ""                          ,
                 "*************************" , 
                 "News & Announcements"      , 
                 "*************************" , 
