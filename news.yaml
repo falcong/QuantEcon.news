@@ -9,6 +9,19 @@
 #- Note: Ordering of Fields doesn't matter, sorting is done by date.
 #
 
+18-January-2017:
+  description: >
+    The Open Source Macroeconomics Laboratory (OSM Lab) at the Becker Friedman Institute is soliciting applications for a seven week 
+    computational macroeconomics boot camp for advanced undergraduate students and some graduate students, to be held at the 
+    University of Chicago from June 19 to August 4 of 2017.  Funding is available to successful applicants and the QuantEcon lectures 
+    will be part of the curriculum.  Applications must  be submitted by February 17.  For further details see http://bfi.uchicago.edu/osm.
+  title: >
+    OSM Boot Camp at the University of Chicago
+  summary: >
+    The Open Source Macroeconomics Laboratory (OSM Lab) is soliciting applications...
+  website: >
+    lecture-site, org-site
+
 12-January-2017:
     description: >
         Position descriptions are now available for a `PostDoc <https://drive.google.com/file/d/0Bx9LyXzJWN5iUzNoNDcyVC1UM00/view?usp=sharing>`_ 
