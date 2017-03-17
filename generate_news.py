@@ -38,7 +38,7 @@ HTML_FILENAME = "news_snippet.html"
 CONFIG_LECTURES = {
     'build_dir' : "./lecture_site/",
     'tag' : "lecture-site",
-    'web-folder' : "common",
+    'web-folder' : "news",
     #-HTML OPTIONS-#
     'html-items' : 4,
     'html-filename' : "news_snippet.html",
@@ -47,7 +47,7 @@ CONFIG_LECTURES = {
                     r'<h2>News</h2>'                ,
                     r'<ul>'                         ,
                    ],   
-    'html-end' : [r'</ul>',r'<p class="more"><a href="/common/news.html">Read more QuantEcon news</a></p>',r'</div>'],
+    'html-end' : [r'</ul>',r'<p class="more"><a href="/news/news.html">Read more QuantEcon news</a></p>',r'</div>'],
     #-RST OPTIONS-#
     'rst-doc': [
                 ".. _%s:" % RST_FILENAME.split(".")[0]    , 
