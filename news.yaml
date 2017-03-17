@@ -146,7 +146,7 @@
     description: >
         On June 16 we'll be running a workshop based around quant-econ.net at the 
         `North American summer meeting of the Econometric Society
-        <http://sites.sas.upenn.edu/nasm-2016/>`___.  The workshop will
+        <http://sites.sas.upenn.edu/nasm-2016/>`__.  The workshop will
         provide a quick start introduction to programming in Python and Julia
         for economists.  The target audience is economists with some
         experience with programming in Matlab, Stata or similar, who are
@@ -273,7 +273,7 @@
         constructed in the usual open source way.  All manner of contributions
         are welcome, from documentation improvements and minor bug fixes to
         new algorithms and models.  More details can be found `here
-        <http://quantecon.org/get_involved.html>`___.  Thanks to Matt McKay and Andrij
+        <http://quantecon.org/get_involved.html>`__.  Thanks to Matt McKay and Andrij
         Stachurski for most of the leg work in getting the new website on
         line.
     title: >
@@ -339,7 +339,7 @@
         means that you can now ``import quantecon as qe``, in just the same way that
         you ``import numpy as np``.  The package can be found on `pypi
         <https://pypi.python.org/pypi/quantecon/>`__.  Details and installation
-        instructions can be found `here <http://quantecon.org/python_index.html>`___.
+        instructions can be found `here <http://quantecon.org/python_index.html>`__.
         
         Like the great majority of Python libraries, QuantEcon is open source and
         we welcome contributions of high quality code for solving important economic
