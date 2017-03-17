@@ -55,7 +55,7 @@ Along with several collaborators, we have created an organization called `QuantE
 12-February-2016
 ----------------
 
-On June 16 we'll be running a workshop based around quant-econ.net at the  `North American summer meeting of the Econometric Society <http://sites.sas.upenn.edu/nasm-2016/>`___.  The workshop will provide a quick start introduction to programming in Python and Julia for economists.  The target audience is economists with some experience with programming in Matlab, Stata or similar, who are curious about Python and Julia, and how they might be useful for research in quantitative economics.  The `workshop page <http://quantecon.org/econometric_society_workshop.html>`__ contains further details.
+On June 16 we'll be running a workshop based around quant-econ.net at the  `North American summer meeting of the Econometric Society <http://sites.sas.upenn.edu/nasm-2016/>`__.  The workshop will provide a quick start introduction to programming in Python and Julia for economists.  The target audience is economists with some experience with programming in Matlab, Stata or similar, who are curious about Python and Julia, and how they might be useful for research in quantitative economics.  The `workshop page <http://quantecon.org/econometric_society_workshop.html>`__ contains further details.
 
 
 22-December-2015
@@ -97,7 +97,7 @@ We have added a `new lecture <http://quant-econ.net/py/arellano.html>`__ on the 
 10-December-2014
 ----------------
 
-Our lectures draw heavily on code from two parallel code libraries, `QuantEcon.py <https://github.com/QuantEcon/QuantEcon.py>`__ and `QuantEcon.jl <https://github.com/QuantEcon/QuantEcon.jl>`__.  These libraries have been unified under the QuantEcon project, and a website for the project is now `up and running <http://quantecon.org/>`__.  The code libraries are separate entities from the lectures and are constructed in the usual open source way.  All manner of contributions are welcome, from documentation improvements and minor bug fixes to new algorithms and models.  More details can be found `here <http://quantecon.org/get_involved.html>`___.  Thanks to Matt McKay and Andrij Stachurski for most of the leg work in getting the new website on line.
+Our lectures draw heavily on code from two parallel code libraries, `QuantEcon.py <https://github.com/QuantEcon/QuantEcon.py>`__ and `QuantEcon.jl <https://github.com/QuantEcon/QuantEcon.jl>`__.  These libraries have been unified under the QuantEcon project, and a website for the project is now `up and running <http://quantecon.org/>`__.  The code libraries are separate entities from the lectures and are constructed in the usual open source way.  All manner of contributions are welcome, from documentation improvements and minor bug fixes to new algorithms and models.  More details can be found `here <http://quantecon.org/get_involved.html>`__.  Thanks to Matt McKay and Andrij Stachurski for most of the leg work in getting the new website on line.
 
 
 03-October-2014
@@ -123,7 +123,7 @@ We feel very fortunate to be partnering with the outstanding team at the Sloan F
 10-June-2014
 ------------
 
-The past few weeks have been spent reorganizing the code library, combining the most useful programs into a package called QuantEcon.  In practice this means that you can now ``import quantecon as qe``, in just the same way that you ``import numpy as np``.  The package can be found on `pypi <https://pypi.python.org/pypi/quantecon/>`__.  Details and installation instructions can be found `here <http://quantecon.org/python_index.html>`___.
+The past few weeks have been spent reorganizing the code library, combining the most useful programs into a package called QuantEcon.  In practice this means that you can now ``import quantecon as qe``, in just the same way that you ``import numpy as np``.  The package can be found on `pypi <https://pypi.python.org/pypi/quantecon/>`__.  Details and installation instructions can be found `here <http://quantecon.org/python_index.html>`__.
 
 Like the great majority of Python libraries, QuantEcon is open source and we welcome contributions of high quality code for solving important economic models.
 
