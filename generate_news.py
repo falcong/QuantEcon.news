@@ -164,7 +164,10 @@ for project in BUILD:
         date = "%s-%s-%s" % (day, num_to_month[month], year)                #Long Date Style: '03-October-2014'
         short_date = "%s %s %s" % (day, num_to_month[month][:3], year)      #Short Date Style: '03 Oct 2014'
         html_id = "%s-%s" % (num_to_month[month].lower(), year)
-        html_doc.append(r'<li><span class="date">'+short_date+r'</span> <a href="%s/news.html#%s">'%(project['web-folder'], html_id)+doc[date]['title'].rstrip("\n")+r'</a>')
+        try:
+        	html_doc.append(r'<li><span class="date">'+short_date+r'</span> <a href="%s">'%(doc[date]['link'])+doc[date]['title'].rstrip("\n")+r'</a>')
+        except:
+        	html_doc.append(r'<li><span class="date">'+short_date+r'</span> <a href="%s/news.html#%s">'%(project['web-folder'], html_id)+doc[date]['title'].rstrip("\n")+r'</a>')
         html_doc.append(r'<span class="summ">'+doc[date]['summary'].rstrip("\n")+r'</span></li>')
     html_doc += project['html-end'] #HTML_END
     #-Write HTML Snippet-#
