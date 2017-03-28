@@ -9,6 +9,21 @@
 #- Note: Ordering of Fields doesn't matter, sorting is done by date.
 #
 
+28-March-2017:
+  description: >
+    You can now find three new lectures on the Julia side of QuantEcon lectures: 
+      `Globalization and Cycles <https://lectures.quantecon.org/jl/matsuyama.html>`__, 
+      `Coleman Policy Iteration <https://lectures.quantecon.org/jl/coleman_policy_iter.html>`__, 
+      and `Lake Model <https://lectures.quantecon.org/jl/lake_model.html>`__. 
+      Additionally, the lectures' style has been refreshed to make reading 
+      code input and output in lectures simpler. 
+  title: >
+    New Julia Lectures and Style Update
+  summary: >
+    You can now find three new lectures on the Julia side of QuantEcon lectures...
+  website: >
+    lecture-site, org-site
+
 21-March-2017:
   description: >
     `Following the lead of the Federal Reserve Bank of New York (FRBNY) <http://libertystreeteconomics.newyorkfed.org/2015/12/the-frbny-dsge-model-meets-julia.html>`__,
