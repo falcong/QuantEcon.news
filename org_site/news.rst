@@ -19,7 +19,7 @@ You can now find three new lectures on the Julia side of QuantEcon lectures:
 
   Additionally, the lectures' style has been refreshed to make reading 
 
-  code input and output in lectures simpler. 
+  code input and output simpler. 
 
 
 21-March-2017
