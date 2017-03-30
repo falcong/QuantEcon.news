@@ -43,7 +43,7 @@ A few months ago one of us (the one who's better at fly fishing) gave a lecture 
 08-September-2016
 -----------------
 
-A Julia version of the Aiyagari lecture `has been added <http://quant-econ.net/jl/aiyagari.html>`__ to the site.  The code was written by NYU PhD student `Victoria Gregory <https://github.com/vgregory757>`__.  We are also grateful to contributions from `Maximilian Huber <https://github.com/MaximilianJHuber>`__ and `Spencer Lyon <https://github.com/spencerlyon2>`__.
+A Julia version of the Aiyagari lecture `has been added <http://quant-econ.net/jl/aiyagari.html>`__ to the site.  The code was written by NYU PhD student `Victoria Gregory <https://github.com/vgregory757>`__.  We are also grateful to contributions from `Maximilian Huber <https://github.com/MaximilianJHuber>`__ and `Spencer Lyon <https://github.com/sglyon>`__.
 
 
 08-July-2016
