@@ -6,6 +6,12 @@
 News & Announcements
 *************************
 
+7-April-2017
+------------
+
+Thanks to the suggestion of `Chris Carroll <http://www.econ2.jhu.edu/people/ccarroll/>`__, we have published a new lecture (in `Python <https://lectures.quantecon.org/py/egm_policy_iter.html>`__  and `Julia <https://lectures.quantecon.org/jl/egm_policy_iter.html>`__) using the endogenous grid method to implement policy iteration. The EGM algorithm results in significant speed improvements over `Coleman policy function iteration <https://lectures.quantecon.org/py/coleman_policy_iter.html>`__.
+
+
 28-March-2017
 -------------
 

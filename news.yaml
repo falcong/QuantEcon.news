@@ -9,6 +9,22 @@
 #- Note: Ordering of Fields doesn't matter, sorting is done by date.
 #
 
+7-April-2017:
+  description: >
+    Thanks to the suggestion of `Chris Carroll <http://www.econ2.jhu.edu/people/ccarroll/>`__,
+    we have published a new lecture (in `Python <https://lectures.quantecon.org/py/egm_policy_iter.html>`__ 
+    and `Julia <https://lectures.quantecon.org/jl/egm_policy_iter.html>`__)
+    using the endogenous grid method to implement policy iteration. The EGM
+    algorithm results in significant speed improvements over
+    `Coleman policy function iteration <https://lectures.quantecon.org/py/coleman_policy_iter.html>`__.
+  title: >
+    Endogenous Grid Method in Python and Julia
+  summary: >
+    Thanks to the suggestion of Chris Carroll, we have published a new lecture...
+  website: >
+    lecture-site, org-site
+
+
 28-March-2017:
   description: >
     You can now find three new lectures on the Julia side of QuantEcon lectures covering 
