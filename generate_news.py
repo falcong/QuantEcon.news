@@ -128,7 +128,7 @@ def _to_numeric_dates(datelist):
     dates = []
     for date in datelist:
         (day,month,year) = date.split('-')
-        dates.append((year, month_to_num[month], day))
+        dates.append((int(year), int(month_to_num[month]), int(day)))
     return dates
 
 #------------#
@@ -148,7 +148,7 @@ for project in BUILD:
     rst_doc = copy.copy(project['rst-doc'])
     dates = _to_numeric_dates(list(doc.keys()))
     for year, month, day in sorted(dates, reverse=True):
-        date = "%s-%s-%s" % (day, num_to_month[month], year)
+        date = "%s-%s-%s" % (str(day).zfill(2), num_to_month[month], year)
         rst_doc.append(date)
         rst_doc.append("-"*len(date))
         rst_doc.append("")
@@ -161,7 +161,7 @@ for project in BUILD:
     HTML_ITEMS = project['html-items']
     html_doc = copy.copy(project['html-doc'])
     for year, month, day in sorted(dates, reverse=True)[:HTML_ITEMS]:
-        date = "%s-%s-%s" % (day, num_to_month[month], year)                #Long Date Style: '03-October-2014'
+        date = "%s-%s-%s" % (str(day).zfill(2), num_to_month[month], year)                #Long Date Style: '03-October-2014'
         short_date = "%s %s %s" % (day, num_to_month[month][:3], year)      #Short Date Style: '03 Oct 2014'
         html_id = "%s-%s" % (num_to_month[month].lower(), year)
         try:
