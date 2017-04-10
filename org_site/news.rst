@@ -6,10 +6,16 @@
 News & Announcements
 *************************
 
-7-April-2017
-------------
+10-April-2017
+-------------
 
-Thanks to the suggestion of `Chris Carroll <http://www.econ2.jhu.edu/people/ccarroll/>`__, we have published a new lecture (in `Python <https://lectures.quantecon.org/py/egm_policy_iter.html>`__  and `Julia <https://lectures.quantecon.org/jl/egm_policy_iter.html>`__) using the endogenous grid method to implement policy iteration. The EGM algorithm results in significant speed improvements over `Coleman policy function iteration <https://lectures.quantecon.org/py/coleman_policy_iter.html>`__.
+A Julia version of `'A Problem that Stumped Milton Friedman'  <https://lectures.quantecon.org/jl/wald_friedman.html>`__ is now available.  The lecture covers sequential analysis - a technique developed by Abraham Wald  to solve decision making problems.
+
+
+07-April-2017
+-------------
+
+We have added a new lecture (in both `Python <https://lectures.quantecon.org/py/egm_policy_iter.html>`__  and `Julia <https://lectures.quantecon.org/jl/egm_policy_iter.html>`__) on the endogenous grid method for policy iteration. The EGM algorithm, invented by `Chris Carroll <http://www.econ2.jhu.edu/people/ccarroll/>`__, results in significant speed improvements over `Coleman policy function iteration <https://lectures.quantecon.org/py/coleman_policy_iter.html>`__.
 
 
 28-March-2017
@@ -126,8 +132,8 @@ Our lectures draw heavily on code from two parallel code libraries, `QuantEcon.p
 After a fair bit of work we're finally ready to set loose on the world a Julia version of our lectures, as well as a nice new front end for the website. Most credit goes to our talented RAs Chase Coleman, Spencer Lyon and Matt McKay. Credit for the new website design and implementation goes to Andrij Stachurski.
 
 
-5-August-2014
--------------
+05-August-2014
+--------------
 
 Largely thanks to the efforts of our RAs Chase Coleman and Spencer Lyon, we now have a `shiny new on-line documentation page <https://quanteconpy.readthedocs.org/en/latest/>`__ for QuantEcon.
 
