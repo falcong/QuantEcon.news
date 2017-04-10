@@ -22,7 +22,7 @@
   website: >
     lecture-site, org-site
 
-7-April-2017:
+07-April-2017:
   description: >
     We have added a new lecture (in both `Python <https://lectures.quantecon.org/py/egm_policy_iter.html>`__ 
     and `Julia <https://lectures.quantecon.org/jl/egm_policy_iter.html>`__)
@@ -361,7 +361,7 @@
         lecture-site, org-site
 
 
-5-August-2014:
+05-August-2014:
     description: >
         Largely thanks to the efforts of our RAs Chase Coleman and Spencer Lyon, we
         now have a `shiny new on-line documentation page <https://quanteconpy.readthedocs.org/en/latest/>`__
