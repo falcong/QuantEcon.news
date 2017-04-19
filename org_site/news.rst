@@ -9,7 +9,7 @@ News & Announcements
 10-April-2017
 -------------
 
-A Julia version of `'A Problem that Stumped Milton Friedman'  <https://lectures.quantecon.org/jl/wald_friedman.html>`__ is now available.  The lecture covers sequential analysis - a technique developed by Abraham Wald  to solve decision making problems.
+A Julia version of `A Problem that Stumped Milton Friedman  <https://lectures.quantecon.org/jl/wald_friedman.html>`__ is now available.  The lecture covers sequential analysis - a technique developed by Abraham Wald  to solve decision making problems.
 
 
 07-April-2017
