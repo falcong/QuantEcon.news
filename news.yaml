@@ -9,6 +9,20 @@
 #- Note: Ordering of Fields doesn't matter, sorting is done by date.
 #
 
+24-April-2017:
+  description: >
+    If you're considering making the switch over to Python from STATA (or even R), we have a
+    `new cheatsheet <https://cheatsheets.quantecon.org/stats-cheatsheet.html>`__ to help you do so!
+    The cheatsheet compares commonly used functions for data handling and manipulation
+    across STATA, Base R, and the Pandas package for Python. 
+  title: >
+    Statistics comparison cheatsheet
+  summary: >
+    If you're considering making the switch over to Pandas from STATA....
+  website: >
+    lecture-site, org-site
+
+
 10-April-2017:
   description: >
     A Julia version of `A Problem that Stumped Milton Friedman 

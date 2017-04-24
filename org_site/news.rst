@@ -6,6 +6,12 @@
 News & Announcements
 *************************
 
+24-April-2017
+-------------
+
+If you're considering making the switch over to Pandas from STATA (or even R), we have a `new cheatsheet <https://cheatsheets.quantecon.org/stats-cheatsheet.html>`__ to help you do so! The cheatsheet compares common functions for data handling and manipulation across the three popular statistical programs.
+
+
 10-April-2017
 -------------
 
