@@ -9,6 +9,20 @@
 #- Note: Ordering of Fields doesn't matter, sorting is done by date.
 #
 
+28-April-2017:
+  description: >
+    An additional lecture on Pandas has been added that covers more advanced functions
+    such as merging, grouping, and using multiindices. Pandas is a powerful Python package
+    that contains useful tools for working with large and complicated datasets. The lecture specifically
+    focuses on techniques useful for working with panel data, with applications to datasets 
+    from the OECD and Eurostat.
+  title: >
+    Pandas for panel data
+  summary: >
+    An additional lecture on Pandas has been added that covers more advanced...
+  website: >
+    lecture-site, org-site
+
 24-April-2017:
   description: >
     If you're considering making the switch over to Python from STATA (or even R), we have a
@@ -18,7 +32,7 @@
   title: >
     Statistics comparison cheatsheet
   summary: >
-    If you're considering making the switch over to Pandas from STATA....
+    If you're considering making the switch over to Pandas from STATA...
   website: >
     lecture-site, org-site
 
@@ -32,7 +46,7 @@
   title: >
     Sequential Analysis in Julia
   summary: >
-    A Julia version of 'A Problem that Stumped Milton Friedman' is now available....
+    A Julia version of 'A Problem that Stumped Milton Friedman' is now available...
   website: >
     lecture-site, org-site
 
