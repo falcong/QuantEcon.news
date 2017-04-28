@@ -6,10 +6,16 @@
 News & Announcements
 *************************
 
+28-April-2017
+-------------
+
+An additional `lecture on Pandas <https://lectures.quantecon.org/py/pandas_panel.html>`__  has been added that covers more advanced functions such as merging, grouping, and using  multiindices. Pandas is a powerful Python package that contains useful tools for working  with large and complicated datasets. The lecture specifically focuses on techniques  useful for working with panel data, with applications to datasets from the OECD and Eurostat.
+
+
 24-April-2017
 -------------
 
-If you're considering making the switch over to Pandas from STATA (or even R), we have a `new cheatsheet <https://cheatsheets.quantecon.org/stats-cheatsheet.html>`__ to help you do so! The cheatsheet compares common functions for data handling and manipulation across the three popular statistical programs.
+If you're considering making the switch over to Python from STATA (or even R), we have a `new cheatsheet <https://cheatsheets.quantecon.org/stats-cheatsheet.html>`__ to help you do so! The cheatsheet compares commonly used functions for data handling and manipulation across STATA, Base R, and the Pandas package for Python. 
 
 
 10-April-2017
