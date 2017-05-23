@@ -4,6 +4,18 @@
 News & Announcements
 *************************
 
+23-May-2017
+-----------
+
+QuantEcon is sponsoring `Jim Savage <https://modernstatisticalworkflow.blogspot.com.au/>`__  to present a workshop on modern statistical workflow and bayesian modeling in  `Stan <http://mc-stan.org/>__`. The workshop will be held at the Australian  National University on 19 June. For more information, please see `here <https://quantecon.org/bayesian-workshop-2017.html>`__.
+
+
+22-May-2017
+-----------
+
+QuantEcon welcomes our newest member, `Trevor Lyon <https://github.com/tlyon3>`__,  who is currently visiting the Australian National University in Canberra.  Trevor is an undergraduate computer science student at Brigham Young University.  He will be spending the summer working on various QuantEcon projects,  including our new notebook publishing site.
+
+
 28-April-2017
 -------------
 
